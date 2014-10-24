@@ -37,12 +37,12 @@ To run properly, this script requires you to add certain classes to your html ma
 THIS IS OPTIONAL. If you don't have your own .js file and want to customize some of the jquery functionality, use the 'main.js' file that has been provided for you. 
 
 To use,add a class of 'menu' to your navigation div. To do this, go to your html file and add a class attribute within your nav tags:
-> <nav class="menu"></nav> 
+<nav class="menu"></nav> 
 ##navText
 The 'navText' class should be placed on the text elements in your navigation bar. This is the content that will slide down from the main navigation links once they are clicked.
 
 To do so, go into your html file, and add a class attribute to every text element that slides down in your navigation.
->	<p class=navText>This is the text that will drop down from your navigation bar</p>
+<p class=navText>This is the text that will drop down from your navigation bar</p>
 
 ##ADD IDs to Your HTML	
 You will need to add an id attribute to each of your navigation links. The name of the id is not important, but you will need to add one on each link.
@@ -53,30 +53,30 @@ You will need to add an id attribute to each of your navigation links. The name 
 ##Customization
 ###jQuery Customization
 You have the ability to modify two jQuery methods:
-* '''<slideDown>'''
-* '''<scrollTop>'''
+* '''slideDown'''
+* '''scrollTop'''
 
 To do so, open up the <main.js> file included in this source folder or copy the code below and paste it into your own javascript <.js> file. If you aren't working with any other <.js> files, feel free to keep the <main.js> file and simply add it to your directory. 
-	'''< $(document).ready(function(){
+	'''$(document).ready(function(){
 		$('.menu').navBar({
 			slideDown: 500,
 			scrollTop: 500
 		});
 
-	});>'''
+	});'''
 
-The '''<slideDown>''' method above controls the speed at which the text in the navigation bar is revealed.
-The '''<scrollTop>''' method controls the speed at which the main body anchors move down the page when a link in the navigation bar is clicked.
+The '''slideDown''' method above controls the speed at which the text in the navigation bar is revealed.
+The '''scrollTop''' method controls the speed at which the main body anchors move down the page when a link in the navigation bar is clicked.
 
 The default number for both of these is 1500, which is listed in milliseconds.
 
 ###CSS Styles
 ##Links
 The following classes SHOULD exist in your .css file, otherwise you will be missing certain color styles.
-* '''<.active>'''
+* '''.active'''
 The .active class will need to be added to your css styles. This style controls the look of the navigation bar on hover. You can change any properties to fit your own style requirements.
 * '''<.currentState>'''
-The .currentState class changes the color of a navigation link when it has been clicked. You can change any properties, including font-size, color and background-color to fit your needs.
+The '''.currentState''' class changes the color of a navigation link when it has been clicked. You can change any properties, including font-size, color and background-color to fit your needs.
 
 ###Additional Notes
 This plugin is designed so you can adapt it to your own needs. If anything important is missing from the document, or anything is unclear, please feel free to make updates.
