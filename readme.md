@@ -17,7 +17,7 @@ This plugin requires the following files:
 ###Link appropriate files
 You will need to begin by linking the provided.js and .css files to your html.
 
-1. Load jQuery from CDN before the closing body tag (</body>) in your html file. 
+1. Load jQuery from CDN before the closing body tag </body> in your html file. 
 > <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 2. Add the jquery plugin script below the above script in your html file:
