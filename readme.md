@@ -17,13 +17,13 @@ This plugin requires the following files:
 ###Link appropriate files
 You will need to begin by linking the provided.js and .css files to your html.
 
-1. Load jQuery from CDN before the closing body tag '</body>' in your html file. 
+1. Load jQuery from CDN before the closing body tag in your html file. 
 > <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 2. Add the jquery plugin script below the above script in your html file:
 > <script src="pluginScript.js"></script>
 
-NOTE: if your <pluginScript.js> is within a folder, be sure to add the path in your src. For example, if your file is within a separate folder called js, your source would change to the following: <script src="js/pluginScript.js"></script>
+NOTE: if your 'pluginScript.js' is within a folder, be sure to add the path in your src. For example, if your file is within a separate folder called js, your source would change to the following: '''script src="js/pluginScript.js'''
 
 3. Add main CSS stylesheet. Place the code below between your header tags (<header></header>) in your html file:
 > <link rel="stylesheet" href="main.css">
@@ -34,21 +34,21 @@ Be sure your href path matches the location of your css file. See the above note
 To run properly, this script requires you to add certain classes to your html markup.
 
 ##menu
-THIS IS OPTIONAL. If you don't have your own .js file and want to customize some of the jquery functionality, use the '<main.js>' file that has been provided for you. 
+THIS IS OPTIONAL. If you don't have your own .js file and want to customize some of the jquery functionality, use the 'main.js' file that has been provided for you. 
 
-To use,add a class of '<menu>' to your navigation div. To do this, go to your html file and add a class attribute within your nav tags:
+To use,add a class of 'menu' to your navigation div. To do this, go to your html file and add a class attribute within your nav tags:
 > <nav class="menu"></nav> 
 ##navText
-The '<navText>' class should be placed on the text elements in your navigation bar. This is the content that will slide down from the main navigation links once they are clicked.
+The 'navText' class should be placed on the text elements in your navigation bar. This is the content that will slide down from the main navigation links once they are clicked.
 
 To do so, go into your html file, and add a class attribute to every text element that slides down in your navigation.
-	'''<p class=navText>This is the text that will drop down from your navigation bar</p>''' 
+>	<p class=navText>This is the text that will drop down from your navigation bar</p>
 
 ##ADD IDs to Your HTML	
 You will need to add an id attribute to each of your navigation links. The name of the id is not important, but you will need to add one on each link.
-	'''<li id="home">Home</li>'''
-	'''<li id="link2">Link2</li>'''
-	'''<li id="link3">Link3</li>'''
+	<li id="home">Home</li>
+	<li id="link2">Link2</li>
+	<li id="link3">Link3</li>
 
 ##Customization
 ###jQuery Customization
