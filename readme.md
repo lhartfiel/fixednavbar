@@ -53,11 +53,11 @@ To do so, go into your html file, and add a class attribute to every text elemen
 ###ADD IDs to Your HTML	
 You will need to add an id attribute to each of your navigation links. The name of the id is not important, but you will need to add one on each link. An example is provided below.
 
-	`<li id="home">Home</li>`
+	<li id="home">Home</li>
 
-	`<li id="link2">Link2</li>`
+	<li id="link2">Link2</li>
 
-	`<li id="link3">Link3</li>`
+	<li id="link3">Link3</li>
 
 ##Customization
 ####jQuery Customization
