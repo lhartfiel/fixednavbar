@@ -15,13 +15,13 @@ This plugin requires the following files:
 
 ##Beginning Steps
 ####Link appropriate files
-You will need to begin by linking the provided.js and .css files to your html.
+You will need to begin by linking the provided .js and .css files to your html.
 
-1. Load jQuery from CDN before the closing body tag in your html file.
+1. Load jQuery from CDN by inserting the script below just before before the closing body tag in your html file.
 
 	```<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>```
 
-2. Add the jquery plugin script below the above script in your html file:
+2. Add the plugin script just below the jQuery CDN in your html file:
 
 	```<script src="pluginScript.js"></script>```
 
@@ -34,15 +34,15 @@ NOTE: if your 'pluginScript.js' or your 'main.css' is within a folder, be sure t
 ###Add Classes to Your HTML
 To run properly, this script requires you to add certain classes to your html markup.
 
-`.menu`
+1. `.menu`
 
-THIS IS OPTIONAL. If you don't have your own .js file and want to customize some of the jquery functionality, use the `main.js`  file that has been provided for you. 
+This is optional. If you don't have your own .js file and want to customize some of the jquery functionality, use the `main.js`  file that has been provided for you. 
 
-To use,add a class of 'menu' to your navigation div. To do this, go to your html file and add a class attribute within your nav tags:
+To use, add a class of 'menu' to your navigation div. To do this, go to your html file and add a class attribute within your nav tags:
 
 	`<nav class="menu"></nav>`
 
-`.navText`
+2. `.navText`
 
 The `navText` class should be placed on the text elements in your navigation bar. This is the content that will slide down from the main navigation links once they are clicked.
 
@@ -51,7 +51,7 @@ To do so, go into your html file, and add a class attribute to every text elemen
 	`<p class=navText>This is the text that will drop down from your navigation bar</p>`
 
 ###ADD IDs to Your HTML	
-You will need to add an id attribute to each of your navigation links. The name of the id is not important, but you will need to add one on each link.
+You will need to add an id attribute to each of your navigation links. The name of the id is not important, but you will need to add one on each link. An example is provided below.
 
 	`<li id="home">Home</li>`
 
@@ -65,17 +65,16 @@ You have the ability to modify two jQuery methods:
 * ```slideDown```
 * ```scrollTop```
 
-To do so, open up the ```main.js``` file included in this source folder or copy the code below and paste it into your own javascript .js file. If you aren't working with any other <.js> files, feel free to keep the ```main.js``` file and simply add it to your directory. 
+To do so, open up the ```main.js``` file included in this source folder or copy the code below and paste it into your own javascript .js file. If you aren't working with any other main.js files, feel free to keep the ```main.js``` file and simply add it to your directory. 
 
-	`javascript
+	
 	$(document).ready(function(){
 		$('.menu').navBar({
 			slideDown: 500,
 			scrollTop: 500
 		});
-
 	});
-	`
+	
 
 The ```slideDown``` method above controls the speed at which the text in the navigation bar is revealed.
 The ```scrollTop``` method controls the speed at which the main body anchors move down the page when a link in the navigation bar is clicked.
