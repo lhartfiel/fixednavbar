@@ -4,7 +4,7 @@
 This is designed to be a fixed navigation bar on the side of your page. Since the navigation bar works in tandem with different sections on the page, this plugin is best used on one-page websites. That said, feel free to adapt it as you wish!
 
 ##Demo
-View live demo
+[View live demo](http://lhartfiel.github.io/fixednavbar/)
 
 ##Necessary Files
 This plugin requires the following files:
@@ -34,30 +34,30 @@ NOTE: if your 'pluginScript.js' or your 'main.css' is within a folder, be sure t
 ###Add Classes to Your HTML
 To run properly, this script requires you to add certain classes to your html markup.
 
-1. `.menu`
+1. .menu
 
 This is optional. If you don't have your own .js file and want to customize some of the jquery functionality, use the `main.js`  file that has been provided for you. 
 
 To use, add a class of 'menu' to your navigation div. To do this, go to your html file and add a class attribute within your nav tags:
 
-	`<nav class="menu"></nav>`
+	<nav class="menu"></nav>
 
-2. `.navText`
+2. .navText
 
 The `navText` class should be placed on the text elements in your navigation bar. This is the content that will slide down from the main navigation links once they are clicked.
 
 To do so, go into your html file, and add a class attribute to every text element that slides down in your navigation.
 
-	`<p class=navText>This is the text that will drop down from your navigation bar</p>`
+	<p class=navText>This is the text that will drop down from your navigation bar</p>
 
 ###ADD IDs to Your HTML	
 You will need to add an id attribute to each of your navigation links. The name of the id is not important, but you will need to add one on each link. An example is provided below.
 
-	`<li id="home">Home</li>`
+	<li id="home">Home</li>
 
-	`<li id="link2">Link2</li>`
+	<li id="link2">Link2</li>
 
-	`<li id="link3">Link3</li>`
+	<li id="link3">Link3</li>
 
 ##Customization
 ####jQuery Customization
