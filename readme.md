@@ -52,10 +52,9 @@ This class is optional. In the live demo, you should see the text "Menu" at the 
 To use, add a class of 'menu' to your navigation div. To do this, go to your html file and add a class attribute within your nav tags:
 
 	<nav class="menu"></nav>
-
-2. 
+ 
 ###ADD IDs to Your HTML	
-You will need to add an id attribute to each of your navigation links. The name of the id is not important, but you will need to add one on each link. An example is provided below.
+You will need to add an id attribute to each of your navigation links. The name of the id is not important, but you will need to add ones on each link. An example is provided below.
 
 	<li id="home">Home</li>
 
@@ -86,7 +85,7 @@ The ```scrollTop``` method controls the speed at which the main body anchors mov
 The default number for both of these is 1500, which is listed in milliseconds.
 
 ##CSS Styles
-####Links
+####Navigation Bar
 The CSS stylesheet contains a variety of styles (such as headers) that can be customized based on your project. I would suggest you begin by reviewing the included `main.css` file and incorporating these classes/styles into your own stylesheet, where appropriate. 
 
 The following class MUST exist in your .css file, otherwise you will be missing certain color styles. It must be written as ".currentState" in your css file to work correctly.
