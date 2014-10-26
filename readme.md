@@ -37,12 +37,14 @@ A nice starting point for your one-page website is to use the included ```index.
 To run properly, this script requires you to add certain classes to your html markup.
 
 * `.navText`
+
 The `navText` class should be placed on the text elements in your navigation bar. This is the content that will slide down from the main navigation links once they are clicked.
 To do so, go into your html file, and add a class attribute to every text element that slides down in your navigation. See the example below:
 
 	<p class=navText>This is the text that will drop down from your navigation bar</p>
 
 * `.menu`
+
 This class is optional. In the live demo, you should see the text "Menu" at the top of the nav bar. It collapses any open menu links when it is clicked on.
 To use, add a class of 'menu' to your navigation div. To do this, go to your html file and add a class attribute within your nav tags:
 
