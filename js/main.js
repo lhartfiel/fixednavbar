@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('.menu').navBar({
-		slideDown: 500,
-		scrollTop: 500
+		slideDown: 1500,
+		scrollTop: 1500
 	});
 
 });

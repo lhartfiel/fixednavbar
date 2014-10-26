@@ -36,24 +36,20 @@ A nice starting point for your one-page website is to use the included ```index.
 
 To run properly, this script requires you to add certain classes to your html markup.
 
-1. `.navText`
-
+* `.navText`
 The `navText` class should be placed on the text elements in your navigation bar. This is the content that will slide down from the main navigation links once they are clicked.
-
-To do so, go into your html file, and add a class attribute to every text element that slides down in your navigation.
+To do so, go into your html file, and add a class attribute to every text element that slides down in your navigation. See the example below:
 
 	<p class=navText>This is the text that will drop down from your navigation bar</p>
 
-2. `.menu`
- 
-This class is optional. In the live demo, you should see the text "Menu" at the top of the nav bar. It collapses any open menu links when it is clicked on.  
-
+* `.menu`
+This class is optional. In the live demo, you should see the text "Menu" at the top of the nav bar. It collapses any open menu links when it is clicked on.
 To use, add a class of 'menu' to your navigation div. To do this, go to your html file and add a class attribute within your nav tags:
 
 	<nav class="menu"></nav>
  
 ###ADD IDs to Your HTML	
-You will need to add an id attribute to each of your navigation links. The name of the id is not important, but you will need to add ones on each link. An example is provided below.
+You will need to add an id attribute to each of your navigation links. The name of the id is not important. An example is provided below.
 
 	<li id="home">Home</li>
 
@@ -89,7 +85,7 @@ The CSS stylesheet contains a variety of styles (such as headers) that can be cu
 
 The following class MUST exist in your .css file, otherwise you will be missing certain color styles. It must be written as ".currentState" in your css file to work correctly.
 * ```.currentState```
-The ```.currentState``` class changes the color of a navigation link when it has been clicked. You can change/add any properties within the css file.
+The ```.currentState``` class changes the color of a navigation link when it has been clicked.
 
 To make additional style changes to the navigation bar, you can change the properties for the following classes:
 * ```.navContain``` 
