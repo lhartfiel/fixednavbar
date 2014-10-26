@@ -17,7 +17,7 @@ This plugin requires the following files:
 ####Link appropriate files
 You will need to begin by linking the provided .js and .css files to your html.
 
-1. Load jQuery from CDN by inserting the script below just before before the closing body tag in your html file.
+1. Load jQuery from CDN by inserting the script below just before the closing body tag in your html file.
 
 	```<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>```
 
@@ -36,15 +36,7 @@ A nice starting point for your one-page website is to use the included ```index.
 
 To run properly, this script requires you to add certain classes to your html markup.
 
-1. .menu
-
-This class is optional. In the example, it is the text item at the top of the navbar called "Menu." It collapses any open menu links when it is clicked on.  
-
-To use, add a class of 'menu' to your navigation div. To do this, go to your html file and add a class attribute within your nav tags:
-
-	<nav class="menu"></nav>
-
-2. .navText
+1. .navText
 
 The `navText` class should be placed on the text elements in your navigation bar. This is the content that will slide down from the main navigation links once they are clicked.
 
@@ -52,6 +44,16 @@ To do so, go into your html file, and add a class attribute to every text elemen
 
 	<p class=navText>This is the text that will drop down from your navigation bar</p>
 
+
+2. .menu
+
+This class is optional. In the live demo, you should see the text "Menu" at the top of the nav bar. It collapses any open menu links when it is clicked on.  
+
+To use, add a class of 'menu' to your navigation div. To do this, go to your html file and add a class attribute within your nav tags:
+
+	<nav class="menu"></nav>
+
+2. 
 ###ADD IDs to Your HTML	
 You will need to add an id attribute to each of your navigation links. The name of the id is not important, but you will need to add one on each link. An example is provided below.
 
@@ -67,7 +69,7 @@ You have the ability to modify two jQuery methods:
 * ```slideDown```
 * ```scrollTop```
 
-To do so, open up the ```main.js``` file included in this source folder or copy the code below and paste it into your own javascript .js file. If you aren't working with any other main.js files, feel free to keep the ```main.js``` file and simply add it to your directory. 
+To do so, open up the ```main.js``` file included in this source folder or copy the code below and paste it into your own javascript .js file. If you aren't working with any other main.js files, feel free use the ```main.js``` file included with this plugin. 
 
 	
 	$(document).ready(function(){
@@ -85,15 +87,13 @@ The default number for both of these is 1500, which is listed in milliseconds.
 
 ##CSS Styles
 ####Links
-The CSS stylesheet contains a variety of styles (such as headers) that can be customized based on your project. I would suggest you begin by reviewing the included '''main.css''' file and incorporating these classes/styles into your own stylesheet, where appropriate. 
+The CSS stylesheet contains a variety of styles (such as headers) that can be customized based on your project. I would suggest you begin by reviewing the included `main.css` file and incorporating these classes/styles into your own stylesheet, where appropriate. 
 
-The following two classes must exist in your .css file, otherwise you will be missing certain color styles.
-* ```.active```
-The .active class will need to be added to your css styles. This style controls the look of the navigation bar on hover. You can change any properties to fit your own style requirements.
+The following class MUST exist in your .css file, otherwise you will be missing certain color styles. It must be written as ".currentState" in your css file to work correctly.
 * ```.currentState```
 The ```.currentState``` class changes the color of a navigation link when it has been clicked. You can change/add any properties within the css file.
 
-In addition, the three classes below set the background color for the navigation links.
+To make additional style changes to the navigation bar, you can change the properties for the following classes:
 * ```.navContain``` 
 * ```.navLink``` 
 * ```.navLink:hover``` 
