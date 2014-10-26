@@ -21,7 +21,7 @@ You will need to begin by linking the provided .js and .css files to your html.
 
 	```<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>```
 
-2. Add the plugin script just below the jQuery CDN in your html file:
+2. The plugin script should be pasted just below the jQuery CDN in your html file:
 
 	```<script src="pluginScript.js"></script>```
 
@@ -29,14 +29,16 @@ You will need to begin by linking the provided .js and .css files to your html.
 
 	```<link rel="stylesheet" href="main.css">```
 
-NOTE: if your 'pluginScript.js' or your 'main.css' is within a folder, be sure to add the path in your src. For example, if your file is within a separate folder called js, your source would change to the following: ```script src="js/pluginScript.js```
+NOTE: if your 'pluginScript.js' or your 'main.css' is within a folder, be sure your path names indicate this. For example, if your file is within a separate folder called js, your javascript source would change to the following: ```script src="js/pluginScript.js```
 
 ###Add Classes to Your HTML
+A nice starting point for your one-page website is to use the included ```index.html``` file, which has the bare bones structure. However, if you already have an ```index.html``` file, then refer to the instructions below.
+
 To run properly, this script requires you to add certain classes to your html markup.
 
 1. .menu
 
-This is optional. If you don't have your own .js file and want to customize some of the jquery functionality, use the `main.js`  file that has been provided for you. 
+This class is optional. In the example, it is the text item at the top of the navbar called "Menu." It collapses any open menu links when it is clicked on.  
 
 To use, add a class of 'menu' to your navigation div. To do this, go to your html file and add a class attribute within your nav tags:
 
@@ -83,11 +85,19 @@ The default number for both of these is 1500, which is listed in milliseconds.
 
 ##CSS Styles
 ####Links
-The following classes SHOULD exist in your .css file, otherwise you will be missing certain color styles.
+The CSS stylesheet contains a variety of styles (such as headers) that can be customized based on your project. I would suggest you begin by reviewing the included '''main.css''' file and incorporating these classes/styles into your own stylesheet, where appropriate. 
+
+The following two classes must exist in your .css file, otherwise you will be missing certain color styles.
 * ```.active```
 The .active class will need to be added to your css styles. This style controls the look of the navigation bar on hover. You can change any properties to fit your own style requirements.
 * ```.currentState```
-The ```.currentState``` class changes the color of a navigation link when it has been clicked. You can change any properties, including font-size, color and background-color to fit your needs.
+The ```.currentState``` class changes the color of a navigation link when it has been clicked. You can change/add any properties within the css file.
+
+In addition, the three classes below set the background color for the navigation links.
+* ```.navContain``` 
+* ```.navLink``` 
+* ```.navLink:hover``` 
+
 
 ##Additional Notes
 This plugin is designed so you can adapt it to your own needs. If anything important is missing from the document, or anything is unclear, please feel free to make updates.
